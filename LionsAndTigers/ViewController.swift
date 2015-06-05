@@ -55,6 +55,11 @@ class ViewController: UIViewController {
         var randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
         let shownTiger = myTigers[randomIndex]
         
+        myImageView.image = shownTiger.image
+        nameLabel.text = shownTiger.name
+        ageLabel.text = "\(shownTiger.age)"
+        breedLabel.text = shownTiger.breed
+        
         
         
     
