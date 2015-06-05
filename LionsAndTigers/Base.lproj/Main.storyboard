@@ -16,20 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwk-KP-PPT">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="f0C-A8-H1P"/>
-                                    <barButtonItem title="Next" id="avI-Qq-LCR">
-                                        <connections>
-                                            <action selector="nextBarButtonItemPressed:" destination="BYZ-38-t0r" id="KI6-Fw-bfE"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-QX-0EW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 </variation>
-                            </toolbar>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2x-t7-z8e">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -57,30 +49,38 @@
                                     <rect key="frame" x="25" y="503" width="321" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-QX-0EW">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwk-KP-PPT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="f0C-A8-H1P"/>
+                                    <barButtonItem title="Next" id="avI-Qq-LCR">
+                                        <connections>
+                                            <action selector="nextBarButtonItemPressed:" destination="BYZ-38-t0r" id="KI6-Fw-bfE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 </variation>
-                            </imageView>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="mwk-KP-PPT"/>
+                                <exclude reference="L9E-QX-0EW"/>
                                 <exclude reference="X2x-t7-z8e"/>
                                 <exclude reference="EVw-BX-qrr"/>
                                 <exclude reference="0tL-2w-H3U"/>
-                                <exclude reference="L9E-QX-0EW"/>
+                                <exclude reference="mwk-KP-PPT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="mwk-KP-PPT"/>
+                                <include reference="L9E-QX-0EW"/>
                                 <include reference="X2x-t7-z8e"/>
                                 <include reference="EVw-BX-qrr"/>
                                 <include reference="0tL-2w-H3U"/>
-                                <include reference="L9E-QX-0EW"/>
+                                <include reference="mwk-KP-PPT"/>
                             </mask>
                         </variation>
                     </view>
