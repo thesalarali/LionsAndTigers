@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     var myTigers:[Tiger] = []
     
     
+    
+    
     //----------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +51,13 @@ class ViewController: UIViewController {
     //----------------------------------------------
 
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
-        println(myTigers[0])
+        
+        var randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        let shownTiger = myTigers[randomIndex]
         
         
+        
+    
     }
 
 }
