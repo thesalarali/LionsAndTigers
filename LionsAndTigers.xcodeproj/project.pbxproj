@@ -13,6 +13,7 @@
 		CDDB4B5D1B2102C000D53891 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDDB4B5C1B2102C000D53891 /* Images.xcassets */; };
 		CDDB4B601B2102C000D53891 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDDB4B5E1B2102C000D53891 /* LaunchScreen.xib */; };
 		CDDB4B6C1B2102C000D53891 /* LionsAndTigersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB4B6B1B2102C000D53891 /* LionsAndTigersTests.swift */; };
+		CDDB4B761B21064C00D53891 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB4B751B21064C00D53891 /* Tiger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CDDB4B651B2102C000D53891 /* LionsAndTigersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LionsAndTigersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDB4B6A1B2102C000D53891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDDB4B6B1B2102C000D53891 /* LionsAndTigersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionsAndTigersTests.swift; sourceTree = "<group>"; };
+		CDDB4B751B21064C00D53891 /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CDDB4B551B2102C000D53891 /* AppDelegate.swift */,
 				CDDB4B571B2102C000D53891 /* ViewController.swift */,
 				CDDB4B591B2102C000D53891 /* Main.storyboard */,
+				CDDB4B751B21064C00D53891 /* Tiger.swift */,
 				CDDB4B5C1B2102C000D53891 /* Images.xcassets */,
 				CDDB4B5E1B2102C000D53891 /* LaunchScreen.xib */,
 				CDDB4B531B2102C000D53891 /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDDB4B581B2102C000D53891 /* ViewController.swift in Sources */,
+				CDDB4B761B21064C00D53891 /* Tiger.swift in Sources */,
 				CDDB4B561B2102C000D53891 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
