@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     var myTigers:[Tiger] = []
     
+    var currentIndex = 0
+    
     
     
     
@@ -33,6 +35,12 @@ class ViewController: UIViewController {
         myTiger.age = 3
         myTiger.image = UIImage(named: "BengalTiger.jpg")
         
+        var myTiger2 = Tiger()
+        myTiger2.name = "Rex"
+        myTiger2.image = UIImage(named: "IndochineseTiger.jpg")
+        myTiger2.age = 4
+        myTiger2.breed = "Indochinese"
+        
 //        println("My tiger's name is \(myTiger.name) and it's image is \(myTiger.image)")
         
         myImageView.image = myTiger.image
@@ -40,7 +48,7 @@ class ViewController: UIViewController {
         ageLabel.text = "\(myTiger.age)"
         breedLabel.text = myTiger.breed
         
-        myTigers += [myTiger]
+        myTigers += [myTiger, myTiger2]
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +60,17 @@ class ViewController: UIViewController {
 
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
         
-        var randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        var randomIndex:Int
+        
+        do {
+        
+        randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        
+        } while currentIndex == randomIndex
+        
+        currentIndex == randomIndex
+        
+       
         let shownTiger = myTigers[randomIndex]
 //        
 //        myImageView.image = shownTiger.image
