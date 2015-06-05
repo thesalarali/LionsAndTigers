@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var breedLabel: UILabel!
     
+    var myTigers:[Tiger] = []
+    
     
     //----------------------------------------------
     override func viewDidLoad() {
@@ -35,6 +37,8 @@ class ViewController: UIViewController {
         nameLabel.text = myTiger.name
         ageLabel.text = "\(myTiger.age)"
         breedLabel.text = myTiger.breed
+        
+        myTigers += [myTiger]
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +49,7 @@ class ViewController: UIViewController {
     //----------------------------------------------
 
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
-        
+        println(myTigers[0])
         
         
     }
