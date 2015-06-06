@@ -54,7 +54,17 @@ struct Tiger {
         
         var randomFact:String
         
-        return ""
+        if randomNumber == 0 {
+            randomFact = "The Tiger is the biggest species in the cat family"
+        }
+        else if randomNumber == 1 {
+            randomFact = "Tigers can reach a length of 3.3m"
+        }
+        else {
+            randomFact = "Group of tigers is known as an ambush or streak"
+        }
+        
+        return randomFact
     }
     
 }

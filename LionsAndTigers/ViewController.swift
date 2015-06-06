@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var breedLabel: UILabel!
     
+    @IBOutlet weak var randomFactLabel: UILabel!
+    
+    
     var myTigers:[Tiger] = []
     
     var currentIndex = 0
@@ -35,6 +38,7 @@ class ViewController: UIViewController {
         myTiger.age = 3
         myTiger.image = UIImage(named: "BengalTiger.jpg")
         
+        
         myTiger.chuff()
         myTiger.chuffANumberOfTimes(5, isLoud: true)
         myTiger.age = myTiger.ageInTigerYearsFromAge(myTiger.age)
@@ -51,6 +55,7 @@ class ViewController: UIViewController {
         nameLabel.text = myTiger.name
         ageLabel.text = "\(myTiger.age)"
         breedLabel.text = myTiger.breed
+        randomFactLabel.text = myTiger.randomFact()
         
         myTigers += [myTiger, myTiger2]
         
@@ -90,6 +95,7 @@ class ViewController: UIViewController {
             self.nameLabel.text = shownTiger.name
             self.ageLabel.text = "\(shownTiger.age)"
             self.breedLabel.text = shownTiger.breed
+            self.randomFactLabel.text = shownTiger.randomFact()
             
             }, completion: {
                 
