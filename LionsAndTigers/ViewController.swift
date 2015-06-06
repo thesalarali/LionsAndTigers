@@ -35,6 +35,10 @@ class ViewController: UIViewController {
         myTiger.age = 3
         myTiger.image = UIImage(named: "BengalTiger.jpg")
         
+        myTiger.chuff()
+        myTiger.chuffANumberOfTimes(5, isLoud: true)
+        myTiger.age = myTiger.ageInTigerYearsFromAge(myTiger.age)
+        
         var myTiger2 = Tiger()
         myTiger2.name = "Rex"
         myTiger2.image = UIImage(named: "IndochineseTiger.jpg")
@@ -49,6 +53,8 @@ class ViewController: UIViewController {
         breedLabel.text = myTiger.breed
         
         myTigers += [myTiger, myTiger2]
+        
+        myTiger.chuffANumberOfTimes(3)
     }
 
     override func didReceiveMemoryWarning() {
